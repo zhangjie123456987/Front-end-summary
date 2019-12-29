@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>粘连布局</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script type="text/javascript">
+			window.onload = function(){
+				let lis = document.querySelectorAll("#nav li");
+				let demo1 = document.getElementById('demo1');
+				let demo2 = document.getElementById('demo2');
+				let demo3 = document.getElementById('demo3');
+				let DemoArr = [];
+				DemoArr.push(demo1);
+				DemoArr.push(demo2);
+				DemoArr.push(demo3);
+				for(let i = 0;i<lis.length;i++)
+				{
+					lis[i].onclick = function(){
+						for(let i = 0;i<lis.length;i++)
+						{
+							lis[i].style.backgroundColor = "antiquewhite";
+						}
+						for(let i = 0;i<DemoArr.length;i++)
+						{
+							DemoArr[i].style.display = "none";
+						}
+						DemoArr[i].style.display = "block";
+						lis[i].style.backgroundColor = 'aquamarine';
+						
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 这是包裹器 -->
+		<div id = "main">
+			<h1>粘性布局</h1>
+			<!-- 导航栏 -->
+			<div id="nav" class="chearfix">
+				<li><a href="#">效果一</a></li>
+				<li><a href="#">效果二</a></li>
+				<li><a href="#">效果三</a></li>
+			</div>
+			<!-- 展示区 -->
+			<div id = "dispaly">
+				<div id="demo1" style="display: block;">
+					<dl>
+					    <dt>A</dt>
+					    <dd>Andrew W.K.</dd>
+					    <dd>Apparat</dd>
+					    <dd>Arcade Fire</dd>
+					    <dd>At The Drive-In</dd>
+					    <dd>Aziz Ansari</dd>
+					  </dl>
+					  <dl>
+					    <dt>C</dt>
+					    <dd>Chromeo</dd>
+					    <dd>Common</dd>
+					    <dd>Converge</dd>
+					    <dd>Crystal Castles</dd>
+					    <dd>Cursive</dd>
+					  </dl>
+					  <dl>
+					    <dt>E</dt>
+					    <dd>Explosions In The Sky</dd>
+					  </dl>
+					  <dl>
+					    <dt>T</dt>
+					    <dd>Ted Leo & The Pharmacists</dd>
+					    <dd>T-Pain</dd>
+					    <dd>Thrice</dd>
+					    <dd>TV On The Radio</dd>
+					    <dd>Two Gallants</dd>
+					  </dl>
+					  <dl>
+					    <dt>H</dt>
+					    <dd>Head Leo & The Pharmacists</dd>
+					    <dd>H-Pain</dd>
+					    <dd>Hrice</dd>
+					    <dd>HV On The Radio</dd>
+					    <dd>Here Gallants</dd>
+					  </dl>
+				</div>
+				<div id="demo2" style="display: none;">2</div>
+				<div id="demo3" style="display: none;">3</div>
+			</div>
+		</div>
+	</body>
+</html>
