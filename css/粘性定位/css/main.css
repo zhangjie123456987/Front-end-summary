@@ -76,3 +76,47 @@ dd {
   border-top: 1px solid #CCC
 }
 /* demo2 */
+#demo2{
+	width: 800px;
+	background-color: chocolate;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0);
+	text-align: center;
+	overflow-x: scroll;
+}
+#demo2 table{
+	width: 1000px;
+	border-collapse: collapse;
+}
+#demo2 table tr{
+	height: 50px;
+	line-height: 50px;
+}
+#demo2 table tr th,#demo2 table tr td{
+	border: 1px solid black;
+	min-width: 100px;
+}
+/* 布局 */
+#demo2 table tr th:last-child,
+#demo2 table tr td:last-child{
+	position: sticky;
+	right: 0px;
+	background-color: cornflowerblue;
+	box-shadow: -10px 5px 10px black;
+}
+#demo2 table tr th:nth-child(1),
+#demo2 table tr td:nth-child(1)
+{
+	position: sticky;
+	left: 0px;
+	background-color: #FFFFFF;
+}
+#demo2 table tr th:nth-child(2),
+#demo2 table tr td:nth-child(2){
+	position: sticky;
+	left: 100.8px;
+	background-color: #FFFFFF;
+	box-shadow: 10px 5px 10px black;
+}
