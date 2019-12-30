@@ -120,3 +120,30 @@ dd {
 	background-color: #FFFFFF;
 	box-shadow: 10px 5px 10px black;
 }
+/*demo3 */
+#demo3 {
+	width: 800px;
+	height: 500px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0);
+	text-align: center;
+	overflow-y: scroll;
+}
+#demo3 #D_header,#demo3 #D_footer{
+	height: 50px;
+	position: sticky;
+	line-height: 50px;
+	background-color: #6495ED;
+}
+#demo3 #D_header{
+	top: 0px;
+}
+#demo3 #D_footer{
+	top: 450px;
+}
+#demo3 #D_content{
+	height: 400px;
+}
