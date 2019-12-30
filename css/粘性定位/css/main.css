@@ -36,6 +36,7 @@
 #main #dispaly{
 	background-color: cornsilk;
 	height: 600px;
+	position: relative;
 }
 #main #dispaly #demo1{
 	position: absolute;
